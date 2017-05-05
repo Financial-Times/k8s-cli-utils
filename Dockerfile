@@ -6,7 +6,7 @@ COPY ./kubeconfig-template /
 COPY ./docker-entrypoint.sh /
 
 RUN apk --update add ca-certificates openssl \
-  && wget https://storage.googleapis.com/kubernetes-helm/helm-v2.3.1-linux-amd64.tar.gz -O helm.tar.gz \
+  && wget https://storage.googleapis.com/kubernetes-helm/helm-v2.4.1-linux-amd64.tar.gz -O helm.tar.gz \
   && tar zxvf helm.tar.gz \
   && mv linux-amd64/helm /usr/local/bin/helm \
   && rm -rf linux-amd64 \
