@@ -1,4 +1,4 @@
-# 8s-cli-utils
+# k8s-cli-utils
 Docker image that has kubectl and helm tools pre-installed.
 
 ### Important note:
