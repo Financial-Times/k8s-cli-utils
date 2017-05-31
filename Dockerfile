@@ -2,7 +2,7 @@ FROM alpine:3.4
 
 ENV KUBECONFIG=/kubeconfig \
     KUBECTL_VERSION="v1.5.5" \
-    HELM_VERSION="v2.4.1" \
+    HELM_VERSION="v2.4.2" \
     HELM_DLD_TEMP_LOCATION="helm.tar.gz"
 
 COPY ./kubeconfig-template /
