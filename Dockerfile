@@ -18,7 +18,7 @@ RUN apk --update add curl ca-certificates openssl \
   && wget https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl \
   && chmod +x ./kubectl \ 
   && mv ./kubectl /usr/local/bin/kubectl \
-  && curl -L https://github.com/kubernetes-incubator/kube-aws/releases/download/${KUBE_AWS_VERSION}/kube-aws-linux-amd64.tar.gz -O ${KUBE_AWS_DLD_TEMP_LOCATION} \
+  && curl -L https://github.com/kubernetes-incubator/kube-aws/releases/download/${KUBE_AWS_VERSION}/kube-aws-linux-amd64.tar.gz -o ${KUBE_AWS_DLD_TEMP_LOCATION} \
   && tar -zxvf ${KUBE_AWS_DLD_TEMP_LOCATION} \
   && mv linux-amd64/kube-aws /usr/local/bin \
   && rm -rf linux-amd64 \
