@@ -10,7 +10,7 @@ ENV KUBECONFIG=/kubeconfig \
 COPY ./kubeconfig-template /
 COPY ./docker-entrypoint.sh /
 
-RUN apk --update add ca-certificates openssl \
+RUN apk --update add curl ca-certificates openssl \
   && wget https://storage.googleapis.com/kubernetes-helm/helm-${HELM_VERSION}-linux-amd64.tar.gz -O ${HELM_DLD_TEMP_LOCATION} \
   && tar zxvf ${HELM_DLD_TEMP_LOCATION} \
   && mv linux-amd64/helm /usr/local/bin/helm \
