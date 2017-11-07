@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.6
 
 ENV KUBECONFIG=/kubeconfig \
     KUBECTL_VERSION="v1.7.6" \
