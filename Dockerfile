@@ -4,7 +4,7 @@ ENV KUBECONFIG=/kubeconfig \
     KUBECTL_VERSION="v1.7.6" \
     KUBE_AWS_VERSION="v0.9.9" \
     KUBE_AWS_DLD_TEMP_LOCATION="kube-aws.tar.gz" \
-    HELM_VERSION="v2.6.0" \
+    HELM_VERSION="v2.9.0" \
     HELM_DLD_TEMP_LOCATION="helm.tar.gz"
 
 COPY ./kubeconfig-template /
