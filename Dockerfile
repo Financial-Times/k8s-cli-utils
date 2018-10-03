@@ -1,7 +1,7 @@
 FROM alpine:3.6
 
 ENV KUBECONFIG=/kubeconfig \
-    KUBECTL_VERSION="v1.7.6" \
+    KUBECTL_VERSION="v1.11.0" \
     KUBE_AWS_VERSION="v0.10.0" \
     KUBE_AWS_DLD_TEMP_LOCATION="kube-aws.tar.gz" \
     HELM_VERSION="v2.9.1" \
